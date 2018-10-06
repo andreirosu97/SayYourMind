@@ -18,7 +18,7 @@ $(function() {
 
         $.ajax({
             type: 'POST',
-            url: "../getUser.php",
+            url: "../api/getUser.php",
             data: user,
             dataType: 'JSON',
             encode: true,

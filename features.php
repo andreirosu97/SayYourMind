@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php  include('loginLogoutBtn.php');
+<?php  include('api/configurePage.php');
 ?>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     

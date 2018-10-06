@@ -6,7 +6,7 @@ $(function() {
             e.preventDefault();
             $.ajax({
                 type: 'GET',
-                url: "../logOut.php",
+                url: "../api/logOut.php",
                 dataType: 'JSON',
                 encode: true,
                 success: function(result) {

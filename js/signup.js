@@ -22,7 +22,7 @@ $(function() {
         if (allFilledOut && isUserCorrect && isPasswordCorrect) {
             $.ajax({
                 type: 'POST',
-                url: "../registerUser.php",
+                url: "../api/registerUser.php",
                 data: user,
                 dataType: 'JSON',
                 encode: true,
@@ -92,7 +92,7 @@ $(function() {
 
         $.ajax({
             type: 'POST',
-            url: "../getUser.php",
+            url: "../api/getUser.php",
             data: user,
             dataType: 'JSON',
             encode: true,
