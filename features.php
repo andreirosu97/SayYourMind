@@ -25,7 +25,7 @@
       <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="<?php echo $homeLink ?>">Home</a>
-        <a class="p-2 text-dark" href="<?php echo $featuresLink ?>">Features</a>
+        <a class="p-2" href="<?php echo $featuresLink ?>">Features</a>
         <a class="p-2 text-dark" href="<?php echo $pricingLink ?>">Pricing</a>
         <a class="p-2 text-dark" href="<?php echo $supportLink ?>">Support</a>
       </nav>
