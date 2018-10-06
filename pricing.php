@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php  include('loginLogoutBtn.php');
+<?php  include('api/configurePage.php');
 ?>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
-    <title>Pricing example for Bootstrap</title>
+    <title>Pricing</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./style-css/bootstrap.min.css" rel="stylesheet">
@@ -24,10 +24,10 @@
     <nav class="navbar navbar-expand-md navbar-white d-flex flex-column flex-md-row fixed-top bg-white border-bottom shadow-sm p-3 align-items-center px-md-4 bg-white">
       <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Home</a>
-        <a class="p-2 text-dark" href="#">Features</a>
-        <a class="p-2 text-dark" href="#">Pricing</a>
-        <a class="p-2 text-dark" href="#">Support</a>
+        <a class="p-2 text-dark" href="<?php echo $homeLink ?>">Home</a>
+        <a class="p-2 text-dark" href="<?php echo $featuresLink ?>">Features</a>
+        <a class="p-2 text-dark" href="<?php echo $pricingLink ?>">Pricing</a>
+        <a class="p-2 text-dark" href="<?php echo $supportLink ?>">Support</a>
       </nav>
       <a id="logBtn" class="btn btn-outline-primary" href="<?php echo $buttonHRef; ?>"><?php echo $buttonName; ?></a>
    </nav>  

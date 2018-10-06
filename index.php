@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
-    <title>Pricing example for Bootstrap</title>
+    <title>Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./style-css/bootstrap.min.css" rel="stylesheet">
@@ -24,10 +24,10 @@
     <nav class="navbar navbar-expand-md navbar-white d-flex flex-column flex-md-row fixed-top bg-white border-bottom shadow-sm p-3 align-items-center px-md-4 bg-white">
       <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">Home</a>
-        <a class="p-2 text-dark" href="#">Featurures</a>
-        <a class="p-2 text-dark" href="#">Pricing</a>
-        <a class="p-2 text-dark" href="#">Support</a>
+        <a class="p-2 text-dark" href="<?php echo $homeLink ?>">Home</a>
+        <a class="p-2 text-dark" href="<?php echo $featuresLink ?>">Features</a>
+        <a class="p-2 text-dark" href="<?php echo $pricingLink ?>">Pricing</a>
+        <a class="p-2 text-dark" href="<?php echo $supportLink ?>">Support</a>
       </nav>
       <a id="logBtn" class="btn btn-outline-primary" href="<?php echo $buttonHRef; ?>"><?php echo $buttonName; ?></a>
    </nav>  
@@ -129,7 +129,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
 
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Placed at the end of the document so the pages load faster-->
     <script src="./style-css/jquery-3.3.1.slim.min.js.download" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="./style-css/popper.min.js.download"></script>
@@ -142,10 +142,10 @@
         text: 'Thumbnail'
       });
     </script>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="./js/bootstrap-notify.js"></script>
     <script src="./js/bootstrap-notify.min.js"></script>
     <script src="./js/getSession.js"></script>
     <script src="./js/logOut.js"></script>
-
 </body></html>
