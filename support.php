@@ -27,7 +27,7 @@
         <a class="p-2 text-dark" href="<?php echo $homeLink ?>">Home</a>
         <a class="p-2 text-dark" href="<?php echo $featuresLink ?>">Features</a>
         <a class="p-2 text-dark" href="<?php echo $pricingLink ?>">Pricing</a>
-        <a class="p-2 text-dark" href="<?php echo $supportLink ?>">Support</a>
+        <a class="p-2" href="<?php echo $supportLink ?>">Support</a>
       </nav>
       <a id="logBtn" class="btn btn-outline-primary" href="<?php echo $buttonHRef; ?>"><?php echo $buttonName; ?></a>
    </nav>  

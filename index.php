@@ -14,7 +14,7 @@
     <link href="./style-css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./style-css/pricing.css" rel="stylesheet">
+    <link href="./style-css/index.css" rel="stylesheet">
     <link href="./style-css/animate.css" rel="stylesheet">
     <p class="sr-only">navbar navbar-expand-md d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white  fixed-top</p>
   </head>
@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-md navbar-white d-flex flex-column flex-md-row fixed-top bg-white border-bottom shadow-sm p-3 align-items-center px-md-4 bg-white">
       <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="<?php echo $homeLink ?>">Home</a>
+        <a class="p-2" href="<?php echo $homeLink ?>">Home</a>
         <a class="p-2 text-dark" href="<?php echo $featuresLink ?>">Features</a>
         <a class="p-2 text-dark" href="<?php echo $pricingLink ?>">Pricing</a>
         <a class="p-2 text-dark" href="<?php echo $supportLink ?>">Support</a>
