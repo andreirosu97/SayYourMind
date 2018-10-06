@@ -1,7 +1,5 @@
 ﻿<!DOCTYPE html>
 <?php session_start();
-
-
 ?>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
@@ -44,7 +42,6 @@
 <script src="./js/bootstrap-notify.js"></script>
 <script src="./js/bootstrap-notify.min.js"></script>
 <script src="./js/login.js"></script>
-<script src="./js/getSession.js"></script>
 <!-- END OF JAVA SCRIPTS -->
 
 </body></html>

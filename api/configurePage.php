@@ -3,9 +3,11 @@
   if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]) {
     $buttonName = "Log out";
     $buttonHRef = "";
+    $dashboardVis = "visible";
   } else {
     $buttonName = "Sign in";
     $buttonHRef = "login.php";
+    $dashboardVis = "hidden";
   }
 
   $currentPage = $_SERVER['REQUEST_URI'];
