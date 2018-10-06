@@ -15,9 +15,9 @@
   $supportLink = "support.php";
 
   switch($currentPage) {
-    case "index.php" : $homeLink = "?"; break;
-    case "pricing.php" : $pricingLink = "?"; break;
-    case "features.php" : $featuresLink = "?"; break;
-    case "support.php" : $supportLink = "?"; break;
+    case "/index.php" : $homeLink = "?"; break;
+    case "/pricing.php" : $pricingLink = "?"; break;
+    case "/features.php" : $featuresLink = "?"; break;
+    case "/support.php" : $supportLink = "?"; break;
   }
 ?>
