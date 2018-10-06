@@ -18,7 +18,7 @@
     } else if ($user->findUser()) {
         $data["username"] = $user->getUsername();
         $data["goodpass"] = false;
-    } else {
+    } else { 
         $data["username"] = null;
         $data["goodpass"] = false;
     }
