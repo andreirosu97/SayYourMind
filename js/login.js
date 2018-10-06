@@ -49,7 +49,8 @@ $(function() {
                             exit: 'animated bounceOutUp'
                         },
                         onClosed: function() {
-                            window.location.replace("index.php");
+                            console.log("Logged in, moving to dashboard.");
+                            //window.location.assign("dashboard.php");
                         }
                     });
 

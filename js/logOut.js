@@ -24,7 +24,8 @@ $(function() {
                                 exit: 'animated bounceOut'
                             },
                             onClosed: function() {
-                                window.location.replace("");
+                                console.log("Replacing with index.php");
+                                window.location.assign("index.php");
                             }
                         });
                     } else
