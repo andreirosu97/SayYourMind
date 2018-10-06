@@ -50,7 +50,7 @@ $(function() {
                         },
                         onClosed: function() {
                             console.log("Logged in, moving to dashboard.");
-                            //window.location.assign("dashboard.php");
+                            window.location.assign("dashboard.php");
                         }
                     });
 
