@@ -11,7 +11,6 @@
     $res = $stmt->execute(array($reqNumber));
     $vec = $stmt->fetchall();
 
-
     for ($i=0; $i<count($vec); $i++) 
         $data[$vec[$i]['sex']]=$vec[$i]['avg'];
 
