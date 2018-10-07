@@ -14,7 +14,7 @@
     <link href="./style-css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./style-css/support.css" rel="stylesheet">
+    <link href="./style-css/dashboard.css" rel="stylesheet">
     <link href="./style-css/animate.css" rel="stylesheet">
     <p class="sr-only">navbar navbar-expand-md d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white  fixed-top</p>
   </head>
@@ -25,6 +25,7 @@
     <img class="d-block" src="./style-css/Feedback_Like_Positive_Message.png" alt="" width="60" height="60">  
     <h5 class="my-0 mr-md-auto font-weight-bold p-2 text-dark">SayYourMind</h5>
       <nav class="my-2 my-md-0 mr-md-3">
+        <a id="dashboardbtn" class="p-2 text-dark" href="dashboard.php" style="visibility: <?php echo $dashboardVis?>">Dashboard</a>
         <a class="p-2 text-dark" href="<?php echo $homeLink ?>">Home</a>
         <a class="p-2 text-dark" href="<?php echo $featuresLink ?>">Features</a>
         <a class="p-2 text-dark" href="<?php echo $pricingLink ?>">Pricing</a>
@@ -43,7 +44,7 @@
 
   <div class="row">
     <div class="col-md-8 order-md-1 mx-auto">
-      <form class="needs-validation was-validated" novalidate="">
+      <form class="needs-validation" novalidate="">
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName">First name</label>
@@ -142,5 +143,7 @@ Z
     <script src="./js/bootstrap-notify.min.js"></script>
     <script src="./js/getSession.js"></script>
     <script src="./js/logOut.js"></script>
+    <script src="./js/request.js"></script>
+
 
 </body></html>

@@ -24,6 +24,7 @@
     <img class="d-block" src="./style-css/Feedback_Like_Positive_Message.png" alt="" width="60" height="60">  
     <h5 class="my-0 mr-md-auto font-weight-bold p-2 text-dark">SayYourMind</h5>
       <nav class="my-2 my-md-0 mr-md-3">
+        <a id="dashboardbtn" class="p-2 text-dark" href="dashboard.php" style="visibility: <?php echo $dashboardVis?>">Dashboard</a>
         <a class="p-2 text-dark" href="<?php echo $homeLink ?>">Home</a>
         <a class="p-2" href="<?php echo $featuresLink ?>">Features</a>
         <a class="p-2 text-dark" href="<?php echo $pricingLink ?>">Pricing</a>
@@ -44,11 +45,11 @@
     </div>
 
     <div class="card img-ovf  mb-3" >
-        <img class="img-fluid card-img" src="./images/rating-stars-images-wallpaperxcf.jpg">
-        <div class="card-img-overlay d-flex mb-5">
+        <img class="img-fluid card-img" src="./images/rate.jpg">
+        <div class="card-img-overlay d-flex ">
             <div class="my-auto mx-auto text-center">
-                <h4 class="card-title display-4 font-weight-bold text-white ">Give ratings</h4>
-                <p class="card-text lead font-weight-bold text-white">A quick and easy way to respond</p>
+                <h4 class="card-title display-4 font-weight-bold text-black ">Give ratings</h4>
+                <p class="card-text lead font-weight-bold text-black">A quick and easy way to respond</p>
             </div>
         </div>
     </div>
