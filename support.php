@@ -14,7 +14,10 @@
     <link href="./style-css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+<<<<<<< HEAD
     <link href="./style-css/dashboard.css" rel="stylesheet">
+=======
+>>>>>>> c8f11fed94ece53e2900ad2c3f07691c888985e7
     <link href="./style-css/animate.css" rel="stylesheet">
     <p class="sr-only">navbar navbar-expand-md d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white  fixed-top</p>
   </head>
@@ -120,7 +123,6 @@
     </ul>
 </footer>
 </div>
-Z
   
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -144,6 +146,9 @@ Z
     <script src="./js/getSession.js"></script>
     <script src="./js/logOut.js"></script>
     <script src="./js/request.js"></script>
+<<<<<<< HEAD
 
+=======
+>>>>>>> c8f11fed94ece53e2900ad2c3f07691c888985e7
 
 </body></html>

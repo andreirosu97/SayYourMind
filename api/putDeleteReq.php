@@ -1,7 +1,7 @@
 <?php
     include("user.php");
 
-    $reqId = substr($_POST["reqId"],3);
+    $reqId = $_POST["reqId"];
 
     $pdo = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_ROOT_USER, DB_ROOT_PASS);
     

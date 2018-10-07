@@ -25,6 +25,7 @@
                 if ($this->crypted_password == $user['password']) 
                 {
                     return $user;
+                    //log login of user
                 }
             return false;
         }

@@ -1,5 +1,4 @@
 <?php
-    session_start();
     $data = array();
 
     $FirstName = $_POST['FirstName'];
@@ -11,7 +10,7 @@
 
     $pdo = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_ROOT_USER, DB_ROOT_PASS);
     
-    $stmt = $pdo->prepare("INSERT INTO ".TBL_REQ." (FirstName, LastName, UserName, Email, QuestionType, Question) VALUES (?,?,?,?,?,?)");
+    $stmt = $pdo->prepare("INSERT INTO ".TBL_SUPP." (FirstName, LastName, UserName, Email, QuestionType, Question) VALUES (?,?,?,?,?,?)");
     $r = $stmt->execute(array($FirstName, $LastName, $UserName, $Email, $QuestionType, $Question));
 
     $data["result"] = $r;    

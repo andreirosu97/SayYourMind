@@ -18,8 +18,8 @@
 
   $currentPage = substr(strrchr($currentPage, "/"), 1);
 
-  if(isset($_SESSION["loggedin"]) && !$_SESSION["loggedin"]) {
-    die("404 You can't acces this page without logging in.");
+  if(isset($_SESSION["loggedin"]) && !$_SESSION["loggedin"] && (substr($currentPage,0,14) != "answertome.php")) {
+    die("404 You can't acces this page : ".$currentPage." without logging in.");
   }
 
   switch($currentPage) {

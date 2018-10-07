@@ -13,6 +13,7 @@
 
     for ($i=0; $i<$row_count; $i++) {
         $dotdot ="";
+        $userLazy = "'".$_SESSION["user"]["name"]."'";
         if(strlen($results[$i]["text"]) > 70)
             $dotdot = "  ...";
         if($results[$i]["rate"] == NULL )
@@ -22,8 +23,9 @@
         <td>".substr($results[$i]["text"],0,70).$dotdot."</td>
         <td>".$results[$i]["date"]."</td>
         <td>".$results[$i]["rate"]."</td>
-        <td> <button id=del".$results[$i]["reqid"]." type='button' class='btn btn-danger' onClick='deleteReq(this.id)'>Delete request</button> </td>
-        <td> <button id=inf".$results[$i]["reqid"]." type='button' class='btn btn-info'>More details</button> </td>
+        <td> <button type='button' class='btn btn-danger' onClick='deleteReq(\"".$results[$i]["reqid"]."\")'>Delete request</button> </td>
+        <td> <button type='button' class='btn btn-info' onClick=\"getMoreInfo(".$userLazy.",'".$results[$i]["reqid"]."')\">More details</button> </td>
+        <td> <button type='button' data-clipboard-text=\"https://sayyourmind.com/answertome.php?user=".$_SESSION["user"]["name"]."&req=".$results[$i]["reqid"]."\" class='btn btn-secondary' onClick=\"getShareLink()\">Copy Link</button> </td>
         </tr>";
     }
 
