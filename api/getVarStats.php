@@ -2,12 +2,13 @@
     include('user.php');
     session_start();
 
+    $reqNumber = $_POST['reqid'];
     $data = array();
 
     
     $pdo = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_ROOT_USER, DB_ROOT_PASS);
-    $stmt = $pdo->prepare("SELECT age, AVG(rating) AS avg FROM ".TBL_RES." GROUP BY age");
-    $stmt->execute();
+    $stmt = $pdo->prepare("SELECT age, AVG(rating) AS avg FROM ".TBL_RES."WHERE reqid=?  GROUP BY age");
+    $stmt->execute(array($reqNumber));
     $vec = $stmt->fetch_all(PDO::FETCH_ASSOC);
 
     for ($i=0; $i<4; $i++) 

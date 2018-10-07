@@ -3,11 +3,12 @@
     session_start();
 
     $data = array();
+    $reqNumber = $_POST['reqid'];
 
     
     $pdo = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_ROOT_USER, DB_ROOT_PASS);
-    $stmt = $pdo->prepare("SELECT sex, AVG(rating) AS avg FROM ".TBL_RES." GROUP BY sex");
-    $stmt->execute();
+    $stmt = $pdo->prepare("SELECT sex, AVG(rating) AS avg FROM ".TBL_RES."WHERE reqid=?  GROUP BY sex");
+    $stmt->execute(array($reqNumber));
     $vec = $stmt->fetch_all(PDO::FETCH_ASSOC);
 
     for ($i=0; $i<3; $i++) 
