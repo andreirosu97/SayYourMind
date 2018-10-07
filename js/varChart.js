@@ -7,58 +7,55 @@ $(function() {
 
     $.ajax({
         type: 'POST',
-        url: "../api/getDomStats.php",
+        url: "../api/getVarStats.php",
         data: data,
         dataType: 'JSON',
         encode: true,
         success: function(userData) {
             console.log(userData);
-            var info = [0, 0, 0, 0, 0];
-            if (userData.it)
-                info[0] = userData.it;
-            if (userData.mm)
-                info[1] = userData.mm;
-            if (userData.teach)
-                info[2] = userData.teach;
-            if (userData.ind)
-                info[3] = userData.ind;
-            if (userData.oth)
-                info[3] = userData.oth;
 
-            var ctx = document.getElementById("domChart");
+            var info = [0, 0, 0, 0];
+            if (userData.v1)
+                info[0] = userData.v1;
+            if (userData.v2)
+                info[1] = userData.v2;
+            if (userData.v3)
+                info[2] = userData.v3;
+            if (userData.v4)
+                info[3] = userData.v4;
+
+            var ctx = document.getElementById("varChart");
             new Chart(ctx, {
-                type: 'line',
+                type: 'bar',
                 data: {
-                    labels: ["IT", "Management and Marketing", "Teaching", "Industrial", "Other"],
+                    labels: ["0-17", "18-29", "30-49", "50+"],
                     datasets: [{
                         data: info,
                         backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
                             'rgba(54, 162, 235, 0.2)',
                             'rgba(255, 206, 86, 0.2)',
                             'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
                         ],
                         borderColor: [
+                            'rgba(255,99,132,1)',
                             'rgba(54, 162, 235, 1)',
                             'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
+                            'rgba(75, 192, 192, 1)'
                         ],
                         borderWidth: 2
                     }]
                 },
                 options: {
+                    legend: {
+                        display: false,
+                    },
                     scales: {
                         yAxes: [{
                             ticks: {
                                 beginAtZero: true
                             }
                         }]
-                    },
-                    legend: {
-                        display: false,
                     }
                 }
             });

@@ -70,10 +70,10 @@
             <label for="age">Please tell me your are range</label>
             <select class="custom-select d-block" id="age" required="">
               <option value="">Choose one ...</option>
-              <option value = "0 - 17"> 0 - 17</option>
-              <option value = "18 - 29"> 18 - 29</option>
-              <option value = "30 - 49"> 30 - 49</option>
-              <option value = "50+"> 50+</option>
+              <option value = "v1"> 0 - 17</option>
+              <option value = "v2"> 18 - 29</option>
+              <option value = "v3"> 30 - 49</option>
+              <option value = "v4"> 50+</option>
             </select>
             <div class="invalid-feedback">
               Please select a valid option.
@@ -83,11 +83,11 @@
             <label for="age">Please tell me your working domanin</label>
             <select class="custom-select d-block" id="work" required="">
               <option value="">Choose one ...</option>
-              <option value = "IT">IT</option>
-              <option value = "Management and Marketing"> Management and Marketing</option>
-              <option value = "Teaching"> Teaching</option>
-              <option value = "Industrial"> Industrial</option>
-              <option value = "Other"> Other</option>
+              <option value = "it">IT</option>
+              <option value = "mm"> Management and Marketing</option>
+              <option value = "teach"> Teaching</option>
+              <option value = "ind"> Industrial</option>
+              <option value = "oth"> Other</option>
             </select>
             <div class="invalid-feedback">
               Please select a valid option.

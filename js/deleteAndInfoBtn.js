@@ -50,5 +50,5 @@ function deleteReq($reqId) {
 };
 
 function getMoreInfo(user, reqid) {
-    window.location.assign("chart.php?user=" + user + "&req=" + reqid.substr(3));
+    window.location.assign("chart.php?user=" + user + "&req=" + reqid);
 }

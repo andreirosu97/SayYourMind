@@ -71,7 +71,7 @@
 
     <div class="row">
       <div class="col-md-12 mb-3 border">
-        <canvas class="my-4 w-100 chartjs-render-monitor" id="varChart" width="1136" height="479" style="display: block; height: 436px; width: 1033px;"></canvas>
+        <canvas class="my-4 w-100 chartjs-render-monitor" id="domChart" width="1136" height="479" style="display: block; height: 436px; width: 1033px;"></canvas>
       </div>
     </div>
      <div class="row">
@@ -79,7 +79,7 @@
         <canvas class="my-4 w-100 chartjs-render-monitor " id="sexChart" width="500" height="600" style="display: block; height: 410px; width: 511px;"></canvas>
        </div> 
       <div class="col-md-5 mb-3 mr-5 ml-4 border">
-        <canvas class="my-4 w-100 chartjs-render-monitor" id="domChart" width="1136" height="479" style="display: block; height: 360px; width: 511px;"></canvas>
+        <canvas class="my-4 w-100 chartjs-render-monitor" id="varChart" width="500" height="600" style="display: block; height: 360px; width: 511px;"></canvas>
       </div>
     </div>
       <footer class="mb-0 pt-5 text-muted text-center text-small">
@@ -115,6 +115,7 @@
     </script>
     <script src="./style-css/Chart.min.js.download"></script>
     <script src="./js/sexChart.js"></script>
-    
+    <script src="./js/varChart.js"></script>
+    <script src="./js/domChart.js"></script>
 
 </body></html>
