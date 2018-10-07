@@ -61,137 +61,40 @@
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 class="h2">Wellcome back <?php echo $userName ?></h1>
           </div>
+          <div class="container">
+      <div class="py-5 text-center">
+        <h2>Feedback requests</h2>
+        <p class="lead">From here you can manage your requests</p>
+      </div>
 
-         <!-- <canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="1526" height="643" style="display: block; height: 515px; width: 1221px;"></canvas>-->
+     <div class="row">
+      <div class="col-md-5 mb-3 mr-5 ml-5 border">
+        <canvas class="my-4 w-100 chartjs-render-monitor " id="sexChartTotal" width="500" height="600" style="display: block; height: 410px; width: 511px;"></canvas>
+       </div> 
+      <div class="col-md-5 mb-3 mr-5 ml-4 border">
+        <canvas class="my-4 w-100 chartjs-render-monitor" id="varChartTotal" width="500" height="600" style="display: block; height: 360px; width: 511px;"></canvas>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 mb-3 mr-5 ml-5 border">
+        <canvas class="my-4 w-100 chartjs-render-monitor " id="domChartTotal" width="500" height="600" style="display: block; height: 410px; width: 511px;"></canvas>
+       </div> 
+      <div class="col-md-5 mb-3 mr-5 ml-4 border">
+        <canvas class="my-4 w-100 chartjs-render-monitor" id="avgUsr" width="500" height="600" style="display: block; height: 360px; width: 511px;"></canvas>
+      </div>
+    </div>
+      <footer class="mb-0 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2018-2019 Andrei & Raul</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="support.php">Support</a></li>
+        </ul>
+      </footer>
+        </main>
+      </div>
+    </div>
 
-          <h2>Section title</h2>
-          <div class="table-responsive">
-            <table class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>libero</td>
-                  <td>Sed</td>
-                  <td>cursus</td>
-                  <td>ante</td>
-                </tr>
-                <tr>
-                  <td>1,004</td>
-                  <td>dapibus</td>
-                  <td>diam</td>
-                  <td>Sed</td>
-                  <td>nisi</td>
-                </tr>
-                <tr>
-                  <td>1,005</td>
-                  <td>Nulla</td>
-                  <td>quis</td>
-                  <td>sem</td>
-                  <td>at</td>
-                </tr>
-                <tr>
-                  <td>1,006</td>
-                  <td>nibh</td>
-                  <td>elementum</td>
-                  <td>imperdiet</td>
-                  <td>Duis</td>
-                </tr>
-                <tr>
-                  <td>1,007</td>
-                  <td>sagittis</td>
-                  <td>ipsum</td>
-                  <td>Praesent</td>
-                  <td>mauris</td>
-                </tr>
-                <tr>
-                  <td>1,008</td>
-                  <td>Fusce</td>
-                  <td>nec</td>
-                  <td>tellus</td>
-                  <td>sed</td>
-                </tr>
-                <tr>
-                  <td>1,009</td>
-                  <td>augue</td>
-                  <td>semper</td>
-                  <td>porta</td>
-                  <td>Mauris</td>
-                </tr>
-                <tr>
-                  <td>1,010</td>
-                  <td>massa</td>
-                  <td>Vestibulum</td>
-                  <td>lacinia</td>
-                  <td>arcu</td>
-                </tr>
-                <tr>
-                  <td>1,011</td>
-                  <td>eget</td>
-                  <td>nulla</td>
-                  <td>Class</td>
-                  <td>aptent</td>
-                </tr>
-                <tr>
-                  <td>1,012</td>
-                  <td>taciti</td>
-                  <td>sociosqu</td>
-                  <td>ad</td>
-                  <td>litora</td>
-                </tr>
-                <tr>
-                  <td>1,013</td>
-                  <td>torquent</td>
-                  <td>per</td>
-                  <td>conubia</td>
-                  <td>nostra</td>
-                </tr>
-                <tr>
-                  <td>1,014</td>
-                  <td>per</td>
-                  <td>inceptos</td>
-                  <td>himenaeos</td>
-                  <td>Curabitur</td>
-                </tr>
-                <tr>
-                  <td>1,015</td>
-                  <td>sodales</td>
-                  <td>ligula</td>
-                  <td>in</td>
-                  <td>libero</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
         </main>
       </div>
     </div>
@@ -214,38 +117,9 @@
     <script>
       feather.replace()
     </script>
-
-    <!-- Graphs
     <script src="./style-css/Chart.min.js.download"></script>
-    <script>
-      var ctx = document.getElementById("myChart");
-      var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          datasets: [{
-            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
-            lineTension: 0,
-            backgroundColor: 'transparent',
-            borderColor: '#007bff',
-            borderWidth: 4,
-            pointBackgroundColor: '#007bff'
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: false
-              }
-            }]
-          },
-          legend: {
-            display: false,
-          }
-        }
-      });
-    </script> -->
-  
-
+    <script src="./js/pie1.js"></script>
+    <script src="./js/pie2.js"></script>
+    <script src="./js/pie3.js"></script>
+    <script src="./js/pie4.js"></script>
 </body></html>

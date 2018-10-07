@@ -20,7 +20,7 @@
 
   <body class="text-center">
     <form class="form-signin ">
-      <img class="mb-4" src="./style-css/bootstrap-solid.svg" alt="" width="72" height="72">
+      <img class="mb-4" src="./style-css/Feedback_Like_Positive_Message.png" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <label for="inputUsername " class="sr-only">Username</label>
       <input type="text" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="">
