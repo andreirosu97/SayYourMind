@@ -11,7 +11,7 @@
         
     if(5 - $reqCount > 3)
         $color = 'black';
-    if (5 - $reqCount == 3)
+    else if (5 - $reqCount == 3)
         $color = 'green';
     else if(5 - $reqCount == 2)
         $color = 'orange';

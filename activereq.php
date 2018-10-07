@@ -33,26 +33,26 @@ include('api/countReqNoApi.php');
 
 
     <div class="container-fluid">
-      <div class="row">
+      <div class="row" >
       <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link" href="<?php echo $dashboardLink ?>">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                  Dashboard 
+                  Dashboard
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="<?php echo $requestLink ?>">
+                <a class="nav-link" href="<?php echo $requestLink ?>">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                  New request <span class="sr-only">(current)</span>
+                  New request
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo $activereqLink ?>">
+                <a class="nav-link active" href="<?php echo $activereqLink ?>">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                  Active requests
+                  Active requests <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
@@ -61,44 +61,43 @@ include('api/countReqNoApi.php');
                   Reports
                 </a>
               </li>
-            
+            </ul>
           </div>
         </nav>
 
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" style="margin-bottom:60px">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Create a new feedback request here</h1>
+            <h1 class="h2">Active feedback requests</h1>
           </div>
 
     <div class="container">
       <div class="py-5 text-center">
-        <h2>Feedback request form</h2>
-        <h3>Be aware that you can have only 5 requests active at a time!</h3>
-        <h3>Number of requests left : </h3><h3 style="color:<?php echo $color?>;"><?php echo 5 - $reqCount; ?></h3>
-        <p class="lead">Please fill the form below to recieve the request link to give out to people.</p>
+        <h2>Feedback requests</h2>
+        <p class="lead">From here you can manage your requests</p>
       </div>
-        <div class="col-md-12 order-md-1 " >
-          <h4 class="mb-3">Question</h4>
-          <form class="needs-validation" novalidate="">
-            <div class="row">
-              <div class="col-md-12 mb-3">
-                <label for="firstName">Question or statement on which you want the feedback</label>
-                <textarea class="form-control" rows="3" id="question" placeholder="" value="" required="" style="height:70px; max-height:200px;" ></textarea>
-                <div class="invalid-feedback">
-                  Question field is empty.
-                </div>
-              </div>
-            </div>
-            <h4 class="mb-3">Request link</h4>
-            <input id="linkOut" class="form-control" type="text" placeholder="The link will appeare here ..." readonly>
-            <button id="copyBtn" type="button" class="btn btn-secondary mt-1 float-right" onclick="makeCopy()" >Copy to clipboard</button>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Question</th>
+            <th scope="col">Request date</th>
+            <th scope="col">Avrage Rating</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+      <tbody>
+    <?php include("api/populateTable.php"); ?>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+</tbody>
+    </table>
 
-            <hr class="mb-4 mt-5" >
-            <button id="reqBtn" class="btn btn-primary btn-lg btn-block" <?php if(5 - $reqCount == 0) echo 'disabled'?>> Submit request</button>
-          </form>
-        </div>
-      </div>
-      <footer class="my-5 pt-5 text-muted text-center text-small">
+      <footer class="mb-0 pt-5 text-muted text-center text-small">
         <p class="mb-1">© 2018-2019 Andrei & Raul</p>
         <ul class="list-inline">
           <li class="list-inline-item"><a href="#">Privacy</a></li>

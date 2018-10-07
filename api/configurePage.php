@@ -1,6 +1,6 @@
 <?php  session_start();
 
-  $userName;
+  $userName =' ';
   if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]) {
     $buttonName = "Log out";
     $buttonHRef = "";
