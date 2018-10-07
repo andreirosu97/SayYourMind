@@ -78,7 +78,6 @@
               <option value = "male">0 - 16</option>
               <option value = "female">Female</option>
               <option value = "other">Other</option>
-              <option value = "none">Did you just assume my gender ?</option>
             </select>
             <div class="invalid-feedback">
               Please select a valid option.
