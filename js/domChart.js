@@ -7,13 +7,13 @@ $(function() {
 
     $.ajax({
         type: 'POST',
-        url: "../api/getMaleFemaleOtherStats.php",
+        url: "../api/getVarStats.php",
         data: data,
         dataType: 'JSON',
         encode: true,
         success: function(userData) {
             console.log(userData);
-            var info = [0, 0, 0];
+            var info = [0, 0, 0, 0];
             if (userData.male)
                 info[0] = userData.male;
             if (userData.female)
@@ -23,20 +23,22 @@ $(function() {
 
             var ctx = document.getElementById("sexChart");
             new Chart(ctx, {
-                type: 'bar',
+                type: 'pie',
                 data: {
-                    labels: ["Male", "Female", "Other"],
+                    labels: ["0-17", "18-29", "30-49", "50+"],
                     datasets: [{
                         data: info,
                         backgroundColor: [
-                            'rgba(54, 162, 235, 0.2)',
                             'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
                             'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
                         ],
                         borderColor: [
-                            'rgba(54, 162, 235, 1)',
                             'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
                             'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)'
                         ],
                         borderWidth: 2
                     }]
