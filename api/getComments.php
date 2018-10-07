@@ -7,12 +7,11 @@
 
     
     $pdo = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_ROOT_USER, DB_ROOT_PASS);
-    $stmt = $pdo->prepare("SELECT sex, AVG(rating) AS avg FROM ".TBL_RES."WHERE reqid=?  GROUP BY sex");
+    $stmt = $pdo->prepare("SELECT text  FROM ".TBL_RES."WHERE reqid=? ");
     $stmt->execute(array($reqNumber));
     $vec = $stmt->fetch_all(PDO::FETCH_ASSOC);
 
-    for ($i=0; $i<3; $i++) 
-        $data[$vec[$i]['sex']]=$vec[$i]['avg'];
+    $data["resul"] = $vec;
 
     echo json_encode($data,JSON_PRETTY_PRINT);
 ?>
