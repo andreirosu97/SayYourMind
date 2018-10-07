@@ -8,21 +8,26 @@
     <meta name="author" content="">
     <link rel="icon" href="http://getbootstrap.com/favicon.ico">
 
-    <title>Home</title>
+    <title>SayYourMind</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./style-css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./style-css/index.css" rel="stylesheet">
+    <link href="./style-css/home.css" rel="stylesheet">
     <link href="./style-css/animate.css" rel="stylesheet">
     <p class="sr-only">navbar navbar-expand-md d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white  fixed-top</p>
   </head>
 
-  <body>
-    
-    <nav class="navbar navbar-expand-md navbar-white d-flex flex-column flex-md-row fixed-top bg-white border-bottom shadow-sm p-3 align-items-center px-md-4 bg-white">
-      <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+
+<body class="text-center">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">Cover</h3>
+      <nav class="navbar navbar-expand-md navbar-white d-flex flex-column flex-md-row fixed-top bg-white border-bottom shadow-sm p-3 align-items-center px-md-4 bg-white">
+      <h5 class="my-0 mr-md-auto font-weight-bold p-2 text-dark">SayYourMind</h5>
       <nav class="my-2 my-md-0 mr-md-3">
         <a id="dashboardbtn" class="p-2 text-dark" href="dashboard.php" style="visibility: <?php echo $dashboardVis?>">Dashboard</a>
         <a class="p-2" href="<?php echo $homeLink ?>">Home</a>
@@ -32,99 +37,27 @@
       </nav>
       <a id="logBtn" class="btn btn-outline-primary" href="<?php echo $buttonHRef; ?>"><?php echo $buttonName; ?></a>
    </nav>  
-
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center mt-4">
-      <h1 class="display-4">Pricing</h1>
-      <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
     </div>
+  </header>
 
-    <div class="container">
-      <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Free</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-          </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Pro</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-          </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-          </div>
-        </div>
-      </div>
+  <main role="main" class="inner cover my-auto">
+        <h1 class="cover-heading">Wellcome to SayYourMind</h1>
+        <p class="lead">Your opinon metters. Give and receive feedback on diffrent matters quick and easy.</p>
+        <p class="lead">
+        <a href="<?php echo $featuresLink ?>" class="btn btn-lg btn-secondary" style="color:black;">Learn more</a>
+        </p>
+    </main>
 
-      <footer class="pt-4 my-md-5 pt-md-5 border-top">
-        <div class="row">
-          <div class="col-12 col-md">
-            <img class="mb-2" src="./style-css/bootstrap-solid.svg" alt="" width="24" height="24">
-            <small class="d-block mb-3 text-muted">© 2017-2018</small>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Cool stuff</a></li>
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Random feature</a></li>
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Team feature</a></li>
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Stuff for developers</a></li>
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Another one</a></li>
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Last time</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Resource</a></li>
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Resource name</a></li>
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Another resource</a></li>
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Final resource</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Team</a></li>
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Locations</a></li>
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Privacy</a></li>
-              <li><a class="text-muted" href="http://getbootstrap.com/docs/4.1/examples/pricing/#">Terms</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </div>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1 text-white">© 2018-2019 Andrei & Raul</p>
+    <ul class="list-inline">
+       <li class="list-inline-item"><a href="features.php">Features</a></li>
+      <li class="list-inline-item"><a href="pricing.php">Pricing</a></li>
+      <li class="list-inline-item"><a href="support.php">Support</a></li>
+    </ul>
+</footer>
+
+</div>
 
   
     <!-- Bootstrap core JavaScript
