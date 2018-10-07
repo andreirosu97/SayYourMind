@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Andrei Rosu">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="./style-css/Feedback_Like_Positive_Message.png">
 
     <title>Sign up</title>
 
@@ -20,7 +20,7 @@
 
   <body class="text-center">
     <form class="form-signup">
-      <img class="mb-4" src="./style-css/bootstrap-solid.svg" alt="" width="72" height="72">
+      <img class="mb-4" src="./style-css/Feedback_Like_Positive_Message.png" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Sign up here</h1>
 
         <div id="alertUser" class="alert alert-warning fade show" style="margin-top: 10px;">  
