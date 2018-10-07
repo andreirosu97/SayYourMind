@@ -32,7 +32,7 @@
       <a id="logBtn" class="btn btn-outline-primary" href="<?php echo $buttonHRef; ?>"><?php echo $buttonName; ?></a>
    </nav>  
 
-<div class="container-fluid">
+<div class="container">
     <div class="card img-ovf mb-3" >
         <img class="img-fluid card-img" src="./images/dashboard_pic.jpg ">
         <div class="card-img-overlay d-flex">

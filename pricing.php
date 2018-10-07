@@ -37,11 +37,11 @@
       <p class="lead font-weight-bold">For more advantages you can choose one of the following options: </p>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 shadow-sm mx-auto p-1 ml-5" style="max-width: 30rem; height: 800px;">
+      <div class="card mb-4 shadow-sm" >
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Free</h4>
+            <h4 class="my-0 font-weight-bold">Free</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
@@ -54,9 +54,9 @@
             <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-3 "  onclick="location.href='signup.php'">Sign up for free</button>
           </div>
         </div>
-        <div class="card mb-4 shadow-sm mx-auto ml-3" style="max-width: 30rem; height: 800px;">
+        <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Paid user</h4>
+            <h4 class="my-0 font-weight-bold">Paid user</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
@@ -69,9 +69,9 @@
             <button type="button" class="btn btn-lg btn-block btn-primary mt-3" onclick="location.href='support.php'">Contact us</button>
           </div>
         </div>
-        <div class="card mb-4 shadow-sm mx-auto p-1 ml-3 mr-5" style="max-width: 30rem; height: 800px;">
+        <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise</h4>
+            <h4 class="my-0 font-weight-bold">Enterprise</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$45 <small class="text-muted">/ mo</small></h1>
