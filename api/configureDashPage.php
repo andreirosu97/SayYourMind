@@ -23,9 +23,9 @@
   }
 
   switch($currentPage) {
-    case "dashboard.php" : $dashboardLink = "?"; break;
-    case "request.php" : $requestLink = "?"; break;
-    case "activereq.php" : $activereqLink = "?"; break;
-    case "reports.php" : $reportsLink = "?"; break;
+    case "dashboard.php" : $dashboardLink = ""; break;
+    case "request.php" : $requestLink = ""; break;
+    case "activereq.php" : $activereqLink = ""; break;
+    case "reports.php" : $reportsLink = ""; break;
   }
 ?>
