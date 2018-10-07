@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php  include('api/configurePage.php');
+include('api/countReqNoApi.php');
 ?>
 <!-- saved from url=(0053)http://getbootstrap.com/docs/4.1/examples/dashboard/# -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -29,6 +30,7 @@
         </li>
       </ul>
     </nav>
+
 
     <div class="container-fluid">
       <div class="row">
@@ -71,6 +73,8 @@
     <div class="container">
       <div class="py-5 text-center">
         <h2>Feedback request form</h2>
+        <h3>Be aware that you can have only 5 requests active at a time!</h3>
+        <h3>Number of requests left : </h3><h3 style="color:<?php echo $color?>;"><?php echo 5 - $reqCount; ?></h3>
         <p class="lead">Please fill the form below to recieve the request link to give out to people.</p>
       </div>
         <div class="col-md-12 order-md-1 " >
@@ -90,7 +94,7 @@
             <button id="copyBtn" type="button" class="btn btn-secondary mt-1 float-right" onclick="makeCopy()" >Copy to clipboard</button>
 
             <hr class="mb-4 mt-5" >
-            <button id="reqBtn" class="btn btn-primary btn-lg btn-block">Submit request</button>
+            <button id="reqBtn" class="btn btn-primary btn-lg btn-block" <?php if(5 - $reqCount == 0) echo 'disabled'?>> Submit request</button>
           </form>
         </div>
       </div>
