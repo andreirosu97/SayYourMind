@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="./style-css/Feedback_Like_Positive_Message.png">
 
     <title>Pricing</title>
 
@@ -21,8 +21,9 @@
 
   <body>
     
-    <nav class="navbar navbar-expand-md navbar-white d-flex flex-column flex-md-row fixed-top bg-white border-bottom shadow-sm p-3 align-items-center px-md-4 bg-white">
-      <h5 class="my-0 mr-md-auto font-weight-bold p-2 text-dark">SayYourName</h5>
+    <nav class="navbar navbar-expand bg-white">
+    <img class="d-block" src="./style-css/Feedback_Like_Positive_Message.png" alt="" width="60" height="60">  
+    <h5 class="my-0 mr-md-auto font-weight-bold p-2 text-dark">SayYourMind</h5>
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="<?php echo $homeLink ?>">Home</a>
         <a class="p-2 text-dark" href="<?php echo $featuresLink ?>">Features</a>
@@ -32,12 +33,13 @@
       <a id="logBtn" class="btn btn-outline-primary" href="<?php echo $buttonHRef; ?>"><?php echo $buttonName; ?></a>
    </nav>  
 
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center mt-4">
+    <div class="container">
+
+    <div class="pricing-header px-3 py-5 pt-md-5 pb-md-4 mx-auto text-center ">
       <h1 class="display-4">Pricing</h1>
       <p class="lead font-weight-bold">For more advantages you can choose one of the following options: </p>
     </div>
 
-    <div class="container">
       <div class="card-deck mb-3 text-center">
       <div class="card mb-4 shadow-sm" >
           <div class="card-header">

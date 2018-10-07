@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="./style-css/Feedback_Like_Positive_Message.png" sizes="18x18">
 
     <title>Support</title>
 
@@ -21,83 +21,28 @@
 
 <body class="bg-light">
 
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">Cover</h3>
-      <nav class="navbar navbar-expand-md navbar-white d-flex flex-column flex-md-row fixed-top bg-white border-bottom shadow-sm p-3 align-items-center px-md-4 bg-white">
-      <h5 class="my-0 mr-md-auto font-weight-bold p-2 text-dark">SayYourMind</h5>
+   <nav class="navbar navbar-expand bg-white">
+    <img class="d-block" src="./style-css/Feedback_Like_Positive_Message.png" alt="" width="60" height="60">  
+    <h5 class="my-0 mr-md-auto font-weight-bold p-2 text-dark">SayYourMind</h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a id="dashboardbtn" class="p-2 text-dark" href="dashboard.php" style="visibility: <?php echo $dashboardVis?>">Dashboard</a>
-        <a class="p-2" href="<?php echo $homeLink ?>">Home</a>
+        <a class="p-2 text-dark" href="<?php echo $homeLink ?>">Home</a>
         <a class="p-2 text-dark" href="<?php echo $featuresLink ?>">Features</a>
         <a class="p-2 text-dark" href="<?php echo $pricingLink ?>">Pricing</a>
-        <a class="p-2 text-dark" href="<?php echo $supportLink ?>">Support</a>
+        <a class="p-2 " href="<?php echo $supportLink ?>">Support</a>
       </nav>
       <a id="logBtn" class="btn btn-outline-primary" href="<?php echo $buttonHRef; ?>"><?php echo $buttonName; ?></a>
    </nav>  
-    </div>
   </header>
-  
+
 <div class="container">
   <div class="py-5 text-center">
-    <img class="d-block mx-auto mb-4" src="./Checkout example for Bootstrap_files/bootstrap-solid.svg" alt="" width="72" height="72">
-    <h2>Checkout form</h2>
-    <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+    <img class="d-block mx-auto mb-4" src="./style-css/Feedback_Like_Positive_Message.png" alt="" width="90" height="90">
+    <h2>Support form</h2>
+    <p class="lead">For any questions you might have please complete the following form: </p>
   </div>
 
   <div class="row">
-    <div class="col-md-4 order-md-2 mb-4">
-      <h4 class="d-flex justify-content-between align-items-center mb-3">
-        <span class="text-muted">Your cart</span>
-        <span class="badge badge-secondary badge-pill">3</span>
-      </h4>
-      <ul class="list-group mb-3">
-        <li class="list-group-item d-flex justify-content-between lh-condensed">
-          <div>
-            <h6 class="my-0">Product name</h6>
-            <small class="text-muted">Brief description</small>
-          </div>
-          <span class="text-muted">$12</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between lh-condensed">
-          <div>
-            <h6 class="my-0">Second product</h6>
-            <small class="text-muted">Brief description</small>
-          </div>
-          <span class="text-muted">$8</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between lh-condensed">
-          <div>
-            <h6 class="my-0">Third item</h6>
-            <small class="text-muted">Brief description</small>
-          </div>
-          <span class="text-muted">$5</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between bg-light">
-          <div class="text-success">
-            <h6 class="my-0">Promo code</h6>
-            <small>EXAMPLECODE</small>
-          </div>
-          <span class="text-success">-$5</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Total (USD)</span>
-          <strong>$20</strong>
-        </li>
-      </ul>
-
-      <form class="card p-2">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Promo code">
-          <div class="input-group-append">
-            <button type="submit" class="btn btn-secondary">Redeem</button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="col-md-8 order-md-1">
-      <h4 class="mb-3">Billing address</h4>
+    <div class="col-md-8 order-md-1 mx-auto">
       <form class="needs-validation was-validated" novalidate="">
         <div class="row">
           <div class="col-md-6 mb-3">
@@ -117,142 +62,62 @@
         </div>
 
         <div class="mb-3">
-          <label for="username">Username</label>
+          <label for="username">Username <span class="text-muted">(Optional)</span> </label>
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text">@</span>
             </div>
             <input type="text" class="form-control" id="username" placeholder="Username" required="">
-            <div class="invalid-feedback" style="width: 100%;">
-              Your username is required.
-            </div>
           </div>
         </div>
 
         <div class="mb-3">
-          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+          <label for="email">Email </label>
           <input type="email" class="form-control" id="email" placeholder="you@example.com">
           <div class="invalid-feedback">
             Please enter a valid email address for shipping updates.
           </div>
         </div>
 
-        <div class="mb-3">
-          <label for="address">Address</label>
-          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
-          <div class="invalid-feedback">
-            Please enter your shipping address.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-        </div>
-
         <div class="row">
-          <div class="col-md-5 mb-3">
-            <label for="country">Country</label>
-            <select class="custom-select d-block w-100" id="country" required="">
-              <option value="">Choose...</option>
-              <option>United States</option>
+          <div class="col-md-10 mb-3">
+            <label for="question">Type of question</label>
+            <select class="custom-select d-block" style="width: 100%" id="quesiton" required="">
+              <option value="">Choose one of the following question type ...</option>
+              <option>Information request</option>
+              <option>Positions open for hiring</option>
+              <option>Suggestions for new features</option>
+              <option>Complaint</option>
             </select>
             <div class="invalid-feedback">
-              Please select a valid country.
+              Please select a valid option.
             </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="state">State</label>
-            <select class="custom-select d-block w-100" id="state" required="">
-              <option value="">Choose...</option>
-              <option>California</option>
-            </select>
-            <div class="invalid-feedback">
-              Please provide a valid state.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="zip">Zip</label>
-            <input type="text" class="form-control" id="zip" placeholder="" required="">
-            <div class="invalid-feedback">
-              Zip code required.
-            </div>
-          </div>
+          </div>          
         </div>
-        <hr class="mb-4">
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="same-address">
-          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-        </div>
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="save-info">
-          <label class="custom-control-label" for="save-info">Save this information for next time</label>
-        </div>
-        <hr class="mb-4">
 
-        <h4 class="mb-3">Payment</h4>
-
-        <div class="d-block my-3">
-          <div class="custom-control custom-radio">
-            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-            <label class="custom-control-label" for="credit">Credit card</label>
-          </div>
-          <div class="custom-control custom-radio">
-            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-            <label class="custom-control-label" for="debit">Debit card</label>
-          </div>
-          <div class="custom-control custom-radio">
-            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
-            <label class="custom-control-label" for="paypal">PayPal</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="cc-name">Name on card</label>
-            <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-            <small class="text-muted">Full name as displayed on card</small>
+      <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="firstName">Please introduce your question below</label>
+            <textarea class="form-control" rows="3" id="question" placeholder="" value="" required="" style="height:70px; max-height:200px;" ></textarea>
             <div class="invalid-feedback">
-              Name on card is required
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="cc-number">Credit card number</label>
-            <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-            <div class="invalid-feedback">
-              Credit card number is required
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 mb-3">
-            <label for="cc-expiration">Expiration</label>
-            <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-            <div class="invalid-feedback">
-              Expiration date required
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="cc-cvv">CVV</label>
-            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-            <div class="invalid-feedback">
-              Security code required
+              Question field is empty.
             </div>
           </div>
         </div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
       </form>
     </div>
   </div>
 
-  <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">© 2017-2018 Company Name</p>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1 text-black">© 2018-2019 Andrei & Raul</p>
     <ul class="list-inline">
-      <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.1/examples/checkout/#">Privacy</a></li>
-      <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.1/examples/checkout/#">Terms</a></li>
-      <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.1/examples/checkout/#">Support</a></li>
+      <li class="list-inline-item"><a href="index.php">Home</a></li>
+      <li class="list-inline-item"><a href="features.php">Features</a></li>
+      <li class="list-inline-item"><a href="pricing.php">Pricing</a></li>
     </ul>
-  </footer>
+</footer>
 </div>
 Z
   

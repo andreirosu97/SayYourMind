@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="./style-css/Feedback_Like_Positive_Message.png">
 
     <title>SayYourMind</title>
 
@@ -22,24 +22,21 @@
 
 <body class="text-center">
 
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">Cover</h3>
-      <nav class="navbar navbar-expand-md navbar-white d-flex flex-column flex-md-row fixed-top bg-white border-bottom shadow-sm p-3 align-items-center px-md-4 bg-white">
-      <h5 class="my-0 mr-md-auto font-weight-bold p-2 text-dark">SayYourMind</h5>
+<nav class="navbar navbar-expand fixed-top bg-white">
+    <img class="d-block" src="./style-css/Feedback_Like_Positive_Message.png" alt="" width="60" height="60">  
+    <h5 class="my-0 mr-md-auto font-weight-bold p-2 text-dark">SayYourMind</h5>
       <nav class="my-2 my-md-0 mr-md-3">
         <a id="dashboardbtn" class="p-2 text-dark" href="dashboard.php" style="visibility: <?php echo $dashboardVis?>">Dashboard</a>
         <a class="p-2" href="<?php echo $homeLink ?>">Home</a>
         <a class="p-2 text-dark" href="<?php echo $featuresLink ?>">Features</a>
         <a class="p-2 text-dark" href="<?php echo $pricingLink ?>">Pricing</a>
         <a class="p-2 text-dark" href="<?php echo $supportLink ?>">Support</a>
+        <a id="logBtn" class="btn btn-outline-primary" href="<?php echo $buttonHRef; ?>"><?php echo $buttonName; ?></a>
       </nav>
-      <a id="logBtn" class="btn btn-outline-primary" href="<?php echo $buttonHRef; ?>"><?php echo $buttonName; ?></a>
-   </nav>  
-    </div>
-  </header>
+   </nav> 
 
+   
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto pt-5 flex-column">
   <main role="main" class="inner cover my-auto">
         <h1 class="cover-heading">Wellcome to SayYourMind</h1>
         <p class="lead">Your opinon metters. Give and receive feedback on diffrent matters quick and easy.</p>
