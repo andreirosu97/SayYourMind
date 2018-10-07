@@ -59,9 +59,9 @@
           </div> 
           <div class="col-md-6 mb-3">
             <label for="gender">Please tell me your gender</label>
-            <select class="custom-select d-block" id="gender" required="">
+            <select class="custom-select d-block" id="sex" required="">
               <option value="">Choose one ...</option>
-              <option value = "male">Male</option>
+              <option value="male">Male</option>
               <option value = "female">Female</option>
               <option value = "other">Other</option>
             </select>

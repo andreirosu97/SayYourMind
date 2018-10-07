@@ -84,7 +84,7 @@
         <div class="row">
           <div class="col-md-10 mb-3">
             <label for="question">Type of question</label>
-            <select class="custom-select d-block" style="width: 100%" id="quesiton" required="">
+            <select class="custom-select d-block" style="width: 100%" id="quesitonType" required="">
               <option value="">Choose one of the following question type ...</option>
               <option value="1">Information request</option>
               <option value="2">Positions open for hiring</option>
@@ -144,9 +144,5 @@
     <script src="./js/getSession.js"></script>
     <script src="./js/logOut.js"></script>
     <script src="./js/request.js"></script>
-<<<<<<< HEAD
-
-=======
->>>>>>> c8f11fed94ece53e2900ad2c3f07691c888985e7
 
 </body></html>
