@@ -1,9 +1,11 @@
 <?php  session_start();
 
+  $userName;
   if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"]) {
     $buttonName = "Log out";
     $buttonHRef = "";
     $dashboardVis = "visible";
+    $userName = $_SESSION["user"]["name"];
   } else {
     $buttonName = "Sign in";
     $buttonHRef = "login.php";
@@ -21,5 +23,8 @@
     case "/pricing.php" : $pricingLink = "?"; break;
     case "/features.php" : $featuresLink = "?"; break;
     case "/support.php" : $supportLink = "?"; break;
+    default: if(!$_SESSION["loggedin"]) {
+      die("404 You can't acces this page without logging in.");
+    }
   }
 ?>
