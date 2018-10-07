@@ -2,6 +2,17 @@ html {
     font-size: 14px;
 }
 
+html,
+body {
+    background-color: rgb(58, 63, 80);
+}
+
+body {
+    color: #fff;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    height: 90%;
+}
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;
@@ -18,4 +29,5 @@ html {
 
 .card-deck .card {
     min-width: 220px;
+    color: rgb(0, 0, 0);
 }

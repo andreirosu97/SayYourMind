@@ -20,7 +20,8 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-    color: rgb(59, 62, 92) text-shadow: none;
+    color: rgb(49, 50, 61);
+    text-shadow: none;
     /* Prevent inheritance from `body` */
     background-color: #fff;
     border: .05rem solid #fff;
@@ -34,7 +35,7 @@ a:hover {
 html,
 body {
     height: 100%;
-    background-color: rgb(13, 29, 82);
+    background-color: rgb(58, 63, 80);
 }
 
 body {

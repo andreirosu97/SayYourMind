@@ -1,0 +1,37 @@
+/*
+ * Extra utilities
+ */
+
+.card.img-ovf {
+    height: 350px;
+    overflow: hidden;
+}
+
+
+/* 
+img {
+    max-width: 100%;
+    max-height: 100%;
+} */
+
+html,
+body {
+    height: 100%;
+    background-color: rgb(58, 63, 80);
+}
+
+.flex-equal>* {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal>* {
+        -ms-flex: 1;
+        flex: 1;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}

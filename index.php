@@ -27,7 +27,7 @@
     <div class="inner">
       <h3 class="masthead-brand">Cover</h3>
       <nav class="navbar navbar-expand-md navbar-white d-flex flex-column flex-md-row fixed-top bg-white border-bottom shadow-sm p-3 align-items-center px-md-4 bg-white">
-      <h5 class="my-0 mr-md-auto font-weight-normal p-2 text-dark">SayYourMind</h5>
+      <h5 class="my-0 mr-md-auto font-weight-bold p-2 text-dark">SayYourMind</h5>
       <nav class="my-2 my-md-0 mr-md-3">
         <a id="dashboardbtn" class="p-2 text-dark" href="dashboard.php" style="visibility: <?php echo $dashboardVis?>">Dashboard</a>
         <a class="p-2" href="<?php echo $homeLink ?>">Home</a>
@@ -40,16 +40,22 @@
     </div>
   </header>
 
-  <main role="main" class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+  <main role="main" class="inner cover my-auto">
+        <h1 class="cover-heading">Wellcome to SayYourMind</h1>
+        <p class="lead">Your opinon metters. Give and receive feedback on diffrent matters quick and easy.</p>
         <p class="lead">
-          <a href="<?php echo $featuresLink ?>" class="btn btn-lg btn-secondary" style="color:black;">Learn more</a>
+        <a href="<?php echo $featuresLink ?>" class="btn btn-lg btn-secondary" style="color:black;">Learn more</a>
         </p>
     </main>
 
-  <footer class="mastfoot mt-auto">
-      </footer>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1 text-white">© 2018-2019 Andrei & Raul</p>
+    <ul class="list-inline">
+       <li class="list-inline-item"><a href="features.php">Features</a></li>
+      <li class="list-inline-item"><a href="pricing.php">Pricing</a></li>
+      <li class="list-inline-item"><a href="support.php">Support</a></li>
+    </ul>
+</footer>
 
 </div>
 
