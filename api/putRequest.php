@@ -9,11 +9,11 @@
     $date = date("Y/m/d");
     
     $pdo = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_ROOT_USER, DB_ROOT_PASS);
-    $stmt = $pdo->prepare("SELECT LAST_INSERT_ID() AS NR FROM ".TBL_REQ);
+    $stmt = $pdo->prepare("SELECT LAST_INSERT_ID(nr) AS NR FROM ".TBL_REQ);
     $stmt->execute();
     $nr = $stmt->fetch(PDO::FETCH_ASSOC);
     $reqid = $nr["NR"];
-    
+    echo json_encode($reqid,JSON_PRETTY_PRINT);
     $reqid = hash_hmac("sha512", $reqid, "pizza4life");
     $data["result"] = $reqid;
     $stmt = $pdo->prepare("INSERT INTO ".TBL_REQ." (uid, reqid, text, date ) VALUES (?,?,?,?)");
@@ -25,5 +25,5 @@
 
     $data["result"] = $res;
 
-    echo json_encode($data,JSON_PRETTY_PRINT);
+    
 ?>

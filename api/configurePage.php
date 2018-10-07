@@ -25,7 +25,7 @@
     case "pricing.php" : $pricingLink = "?"; break;
     case "features.php" : $featuresLink = "?"; break;
     case "support.php" : $supportLink = "?"; break;
-    default: if(!$_SESSION["loggedin"]) {
+    default: if(isset($_SESSION["loggedin"]) && !$_SESSION["loggedin"]) {
       die("404 You can't acces this page without logging in.".$currentPage);
     }
   }

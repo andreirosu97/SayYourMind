@@ -18,7 +18,7 @@
 
   $currentPage = substr(strrchr($currentPage, "/"), 1);
 
-  if(!$_SESSION["loggedin"]) {
+  if(isset($_SESSION["loggedin"]) && !$_SESSION["loggedin"]) {
     die("404 You can't acces this page without logging in.");
   }
 
