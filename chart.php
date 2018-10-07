@@ -82,6 +82,11 @@
         <canvas class="my-4 w-100 chartjs-render-monitor" id="varChart" width="500" height="600" style="display: block; height: 360px; width: 511px;"></canvas>
       </div>
     </div>
+
+    <div class="my-3 p-3 bg-white rounded shadow-sm">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Comments</h6>
+        <?php include("./api/getComments.php");?>
+    </div>
       <footer class="mb-0 pt-5 text-muted text-center text-small">
         <p class="mb-1">© 2018-2019 Andrei & Raul</p>
         <ul class="list-inline">
