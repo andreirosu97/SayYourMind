@@ -65,7 +65,7 @@
         </div>
 
         <div class="mb-3">
-          <label for="username">Username <span class="text-muted">(Optional)</span> </label>
+          <label for="username">Username </label>
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text">@</span>
@@ -87,10 +87,10 @@
             <label for="question">Type of question</label>
             <select class="custom-select d-block" style="width: 100%" id="quesiton" required="">
               <option value="">Choose one of the following question type ...</option>
-              <option>Information request</option>
-              <option>Positions open for hiring</option>
-              <option>Suggestions for new features</option>
-              <option>Complaint</option>
+              <option value="1">Information request</option>
+              <option value="2">Positions open for hiring</option>
+              <option value="3">Suggestions for new features</option>
+              <option value="4">Complaint</option>
             </select>
             <div class="invalid-feedback">
               Please select a valid option.
