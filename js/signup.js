@@ -53,7 +53,7 @@ $(function() {
                                 exit: 'animated bounceOutUp'
                             },
                             onClosed: function() {
-                                window.location.replace("index.php");
+                                window.location.replace("dashboard.php");
                             }
                         });
 

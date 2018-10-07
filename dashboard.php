@@ -59,17 +59,13 @@
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Wellcome back <?php echo $userName ?></h1>
+            <h1 class="h2">Wellcome back <?php echo $userName ?> here are your overall statistics</h1>
           </div>
           <div class="container">
-      <div class="py-5 text-center">
-        <h2>Feedback requests</h2>
-        <p class="lead">From here you can manage your requests</p>
-      </div>
 
      <div class="row">
       <div class="col-md-5 mb-3 mr-5 ml-5 border">
-        <canvas class="my-4 w-100 chartjs-render-monitor " id="sexChartTotal" width="500" height="600" style="display: block; height: 410px; width: 511px;"></canvas>
+        <canvas class="my-4 w-100 chartjs-render-monitor " id="avgUsr" width="500" height="600" style="display: block; height: 410px; width: 511px;"></canvas>
        </div> 
       <div class="col-md-5 mb-3 mr-5 ml-4 border">
         <canvas class="my-4 w-100 chartjs-render-monitor" id="varChartTotal" width="500" height="600" style="display: block; height: 360px; width: 511px;"></canvas>
@@ -80,7 +76,7 @@
         <canvas class="my-4 w-100 chartjs-render-monitor " id="domChartTotal" width="500" height="600" style="display: block; height: 410px; width: 511px;"></canvas>
        </div> 
       <div class="col-md-5 mb-3 mr-5 ml-4 border">
-        <canvas class="my-4 w-100 chartjs-render-monitor" id="avgUsr" width="500" height="600" style="display: block; height: 360px; width: 511px;"></canvas>
+        <canvas class="my-4 w-100 chartjs-render-monitor" id="sexChartTotal" width="500" height="600" style="display: block; height: 360px; width: 511px;"></canvas>
       </div>
     </div>
       <footer class="mb-0 pt-5 text-muted text-center text-small">

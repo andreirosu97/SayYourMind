@@ -13,7 +13,7 @@ $(function() {
         encode: true,
         success: function(userData) {
             console.log(userData);
-            var info = [0, 0, 0, 0, 0];
+            var info = [1, 1, 1, 1, 1];
             if (userData.it)
                 info[0] = userData.it;
             if (userData.mm)
@@ -50,15 +50,12 @@ $(function() {
                     }]
                 },
                 options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }]
-                    },
                     legend: {
-                        display: false,
+                        display: true,
+                    },
+                    title: {
+                        display: true,
+                        text: "Statistic based on work "
                     }
                 }
             });

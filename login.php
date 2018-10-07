@@ -19,6 +19,8 @@
   </head>
 
   <body class="text-center">
+      
+ 
     <form class="form-signin ">
       <img class="mb-4" src="./style-css/Feedback_Like_Positive_Message.png" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
@@ -26,13 +28,11 @@
       <input type="text" id="inputUsername" class="form-control" placeholder="Username" required="" autofocus="">
       <label for="inputPassword" class="sr-only">Password</label>
       <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-      <!--<div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>-->
       <button class="btn btn-lg btn-primary btn-block" id="sign-in-button">Sign in</button>
-      <button type="button" class="btn btn-secondary btn-sm" style="margin-top: 5px" onclick="location.href='signup.php'">Sign up now !</button>
+      <div class="row justify-content-center">
+        <div class="col-md-4"> 
+      <button type="button" class="btn btn-secondary btn-sm mt-1" onclick="location.href='signup.php'">Sign up now !</button></div>
+      <div class="col-md-4"><button type="button" class="btn btn-secondary btn-sm mt-1" onclick="window.history.back();">Go back</button></div>
       <p class="mt-5 mb-3 text-muted">© Andrei Rosu & Steleac Raul</p>
 
     </form>

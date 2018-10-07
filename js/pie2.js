@@ -13,7 +13,7 @@ $(function() {
         encode: true,
         success: function(userData) {
             console.log(userData);
-            var info = [0, 0, 0];
+            var info = [1, 1, 1];
             if (userData.male)
                 info[0] = userData.male;
             if (userData.female)
@@ -42,15 +42,12 @@ $(function() {
                     }]
                 },
                 options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }]
-                    },
                     legend: {
-                        display: false,
+                        display: true,
+                    },
+                    title: {
+                        display: true,
+                        text: "Statistic based on gender "
                     }
                 }
             });

@@ -43,6 +43,7 @@
       <input type="password" id="inputPasswordRepeat" class="form-control" placeholder="Repeat password" required="">
 
       <button class="btn btn-lg btn-primary btn-block" id="sign-up-button">Sign up</button>
+      <div class="col-md-12"><button type="button" class="btn btn-secondary btn-sm mt-1" onclick="window.history.back();">Go back to Sign in</button></div>
       <p class="mt-5 mb-3 text-muted">© Andrei Rosu & Steleac Raul</p>
 
     </form>

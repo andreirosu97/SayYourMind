@@ -48,7 +48,11 @@ $(function() {
                 },
                 options: {
                     legend: {
-                        display: false,
+                        display: true,
+                    },
+                    title: {
+                        display: true,
+                        text: "Statistic based on age "
                     }
                 }
             });
