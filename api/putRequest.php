@@ -23,6 +23,7 @@
     $res = $stmt->fetch(PDO::FETCH_ASSOC);
 
     $data["result"] = $res;
+    $_SESSION["lastReqId"] = $res["reqid"];
     //log request
     echo json_encode($data,JSON_PRETTY_PRINT);
 ?>

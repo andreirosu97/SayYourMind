@@ -32,28 +32,63 @@
     <form class="form-signin needs-validation" novalidate="">
     <img class="mb-4" src="./style-css/bootstrap-solid.svg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Please responde to this question by <?php echo $author ?></h1>
-      <h3 class="h3 mb-3 font-weight-normal"></h3>
+      <h4 class="h4 mb-3 font-weight-normal"><?php echo $question ?></h4>
 
-
+        <hr class="mb-4">   
         <div class="row">
-          <div class="col-md-10 mb-3">
-            <label for="question">Type of question</label>
-            <select class="custom-select d-block" style="width: 100%" id="quesiton" required="">
-              <option value="">Choose one of the following question type ...</option>
-              <option>Information request</option>
-              <option>Positions open for hiring</option>
-              <option>Suggestions for new features</option>
-              <option>Complaint</option>
+          <div class="col-md-6 mb-3">
+            <label for="rating">Give me a rating from 1 to 10 </label>
+            <select class="custom-select d-block" id="rating" required="">
+              <option value="">Choose one ...</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
             </select>
             <div class="invalid-feedback">
               Please select a valid option.
             </div>
-          </div>          
+          </div> 
+          <div class="col-md-6 mb-3">
+            <label for="gender">Please tell me your gender</label>
+            <select class="custom-select d-block" id="gender" required="">
+              <option value="">Choose one ...</option>
+              <option value = "male">Male</option>
+              <option value = "female">Female</option>
+              <option value = "other">Other</option>
+              <option value = "none">Did you just assume my gender ?</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid option.
+            </div>
+          </div>           
         </div>
-
+        <hr class="mb-4">
+        <div class="row justify-content-md-center">
+         <div class="col-md-5 mb-3">
+            <label for="age">Please tell me your are range</label>
+            <select class="custom-select d-block" id="age" required="">
+              <option value="">Choose one ...</option>
+              <option value = "male">0 - 16</option>
+              <option value = "female">Female</option>
+              <option value = "other">Other</option>
+              <option value = "none">Did you just assume my gender ?</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid option.
+            </div>
+          </div>           
+        </div>
+        <hr class="mb-4">
       <div class="row">
           <div class="col-md-12 mb-3">
-            <label for="firstName">Please introduce your question below</label>
+            <label for="firstName">Please leave a comment bellow</label>
             <textarea class="form-control" rows="3" id="question" placeholder="" value="" required="" style="height:70px; max-height:200px;" ></textarea>
             <div class="invalid-feedback">
               Question field is empty.
