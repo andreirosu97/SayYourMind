@@ -87,14 +87,8 @@ include('api/countReqNoApi.php');
           </tr>
         </thead>
       <tbody>
-    <?php include("api/populateTable.php"); ?>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-</tbody>
+        <?php include("api/populateTable.php"); ?>
+      </tbody>
     </table>
 
       <footer class="mb-0 pt-5 text-muted text-center text-small">
@@ -121,7 +115,7 @@ include('api/countReqNoApi.php');
     <script src="./js/bootstrap-notify.min.js"></script>
     <script src="./js/getSession.js"></script>
     <script src="./js/logOut.js"></script>
-    <script src="./js/copytoclip.js"></script>
+    <script src="./js/deleteAndInfoBtn.js"></script>
 
     <!-- Icons -->
     <script src="./style-css/feather.min.js.download"></script>
@@ -129,6 +123,5 @@ include('api/countReqNoApi.php');
       feather.replace()
     </script>
     
-    <script src="./js/request.js"></script>
 
 </body></html>

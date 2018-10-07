@@ -21,10 +21,10 @@
   $currentPage = substr(strrchr($currentPage, "/"), 1);
 
   switch($currentPage) {
-    case "index.php" : $homeLink = "?"; break;
-    case "pricing.php" : $pricingLink = "?"; break;
-    case "features.php" : $featuresLink = "?"; break;
-    case "support.php" : $supportLink = "?"; break;
+    case "index.php" : $homeLink = ""; break;
+    case "pricing.php" : $pricingLink = ""; break;
+    case "features.php" : $featuresLink = ""; break;
+    case "support.php" : $supportLink = ""; break;
     default: if(isset($_SESSION["loggedin"]) && !$_SESSION["loggedin"]) {
       die("404 You can't acces this page without logging in.".$currentPage);
     }
