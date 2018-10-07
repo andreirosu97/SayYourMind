@@ -84,6 +84,7 @@ include('api/countReqNoApi.php');
             <th scope="col">Avrage Rating</th>
             <th scope="col"></th>
             <th scope="col"></th>
+            <th scope="col"></th>
           </tr>
         </thead>
       <tbody>
@@ -119,6 +120,19 @@ include('api/countReqNoApi.php');
 
     <!-- Icons -->
     <script src="./style-css/feather.min.js.download"></script>
+    <script src="./js/dist/clipboard.min.js"></script>
+
+    <script>
+      function getShareLink(user, reqid) {
+        var btn = document.querySelectorAll('button');
+        var clipboard = new ClipboardJS(btn);
+        console.log(btn);
+        clipboard.on('success', function(e) {
+          console.log(e);
+        });
+    }
+
+    </script>
     <script>
       feather.replace()
     </script>

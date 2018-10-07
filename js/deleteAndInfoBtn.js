@@ -47,4 +47,8 @@ function deleteReq($reqId) {
             }
         }
     });
+};
+
+function getMoreInfo(user, reqid) {
+    window.location.assign("answertome.php?user=" + user + "&req=" + reqid.substr(3));
 }

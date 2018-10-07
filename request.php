@@ -79,7 +79,7 @@ include('api/countReqNoApi.php');
       </div>
         <div class="col-md-12 order-md-1 " >
           <h4 class="mb-3">Question</h4>
-          <form class="needs-validation" novalidate="">
+          <form class="needs-validation " novalidate="">
             <div class="row">
               <div class="col-md-12 mb-3">
                 <label for="firstName">Question or statement on which you want the feedback</label>

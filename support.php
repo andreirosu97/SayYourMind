@@ -14,7 +14,6 @@
     <link href="./style-css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./style-css/support.css" rel="stylesheet">
     <link href="./style-css/animate.css" rel="stylesheet">
     <p class="sr-only">navbar navbar-expand-md d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white  fixed-top</p>
   </head>
@@ -43,7 +42,7 @@
 
   <div class="row">
     <div class="col-md-8 order-md-1 mx-auto">
-      <form class="needs-validation was-validated" novalidate="">
+      <form class="needs-validation" novalidate="">
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="firstName">First name</label>
@@ -119,7 +118,6 @@
     </ul>
 </footer>
 </div>
-Z
   
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -142,5 +140,6 @@ Z
     <script src="./js/bootstrap-notify.min.js"></script>
     <script src="./js/getSession.js"></script>
     <script src="./js/logOut.js"></script>
+    <script src="./js/request.js"></script>
 
 </body></html>
