@@ -6,6 +6,7 @@
     $question = "";
     $author = $_GET['user'];
     $reqNumber = $_GET['req'];
+    
     $stmt = $pdo->prepare("SELECT text FROM ".TBL_REQ." WHERE reqid=?");
     $stmt->execute(array($reqNumber));
     $val = $stmt->fetch(PDO::FETCH_ASSOC);

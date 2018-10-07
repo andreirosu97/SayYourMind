@@ -1,4 +1,5 @@
 <?php
+    include('config.php');
     $data = array();
 
     $FirstName = $_POST['FirstName'];

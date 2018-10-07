@@ -6,7 +6,7 @@ $(function() {
     var $text = $('#text');
     var $reqId = $('#reqIdFromHTML');
     var allFilledOut;
-    console.log("AICI" + $reqId.val());
+
     $("#respBtn").on('click', function(e) {
         console.log($sex.val());
         if ($rating.val() &&
@@ -17,7 +17,6 @@ $(function() {
             $reqId.val()) {
             e.preventDefault();
             allFilledOut = 1;
-            console.log("AICI");
         }
 
         var response = {

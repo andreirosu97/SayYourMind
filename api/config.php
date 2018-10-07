@@ -5,5 +5,5 @@
     define('DB_NAME', 'users'); 
     define('TBL_REQ', 'user_requests');
     define('TBL_RES', 'requests');
-    define('TBL_SUPP', 'suppor');
+    define('TBL_SUPP', 'support');
 ?>
