@@ -107,7 +107,7 @@
           </div>
         </div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+        <button class="btn btn-primary btn-lg btn-block" id="respBtn">Submit</button>
       </form>
     </div>
   </div>
@@ -144,5 +144,6 @@
     <script src="./js/getSession.js"></script>
     <script src="./js/logOut.js"></script>
     <script src="./js/request.js"></script>
+    <script src="./js/support.js"></script>
 
 </body></html>

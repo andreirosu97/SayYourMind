@@ -2,14 +2,8 @@
 <?php  include('api/configureDashPage.php');
     include('api/getRequestToShow.php');
     if($author == $userName) {
-        $adminView = "";
-        $userView = "style=\"display:none\"";
-        $includedCSS = "dashboard.css";
-    } else {
-        $adminView = "style=\"display:none\"";
-        $userView = "";
-        $includedCSS = "answer.css";
-    }
+        die("You have no business to give yourself feedback ! That makes no sense.");
+    } 
 ?>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
@@ -24,7 +18,7 @@
     <link href="./style-css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./style-css/<?php echo $includedCSS?>" rel="stylesheet">
+    <link href="./style-css/answer.css" rel="stylesheet">
     <link href="./style-css/animate.css" rel="stylesheet">
     <input type="text" id="reqIdFromHTML" class="sr-only" value="<?php echo $reqNumber ?>" >
   </head>

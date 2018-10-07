@@ -1,38 +1,39 @@
 $(function() {
-    var $rating = $('#rating');
-    var $sex = $('#sex');
-    var $age = $('#age');
-    var $work = $('#work');
-    var $text = $('#text');
-    var $reqId = $('#reqIdFromHTML');
+    var $FirstName = $('#firstName');
+    var $LastName = $('#lastName');
+    var $UserName = $('#username');
+    var $Email = $('#email');
+    var $QuestionType = $('#quesitonType');
+    var $Question = $('#question');
     var allFilledOut;
-    console.log("AICI" + $reqId.val());
+
     $("#respBtn").on('click', function(e) {
-        console.log($sex.val());
-        if ($rating.val() &&
-            $age.val() &&
-            $work.val() &&
-            $sex.val() &&
-            $text.val() &&
-            $reqId.val()) {
+
+        if ($FirstName.val() &&
+            $LastName.val() &&
+            $UserName.val() &&
+            $Email.val() &&
+            $QuestionType.val() &&
+            $Question.val()) {
+
             e.preventDefault();
             allFilledOut = 1;
-            console.log("AICI");
+            document.getElementById('respBtn').disabled = true;
         }
 
         var response = {
-            reqid: $reqId.val(),
-            rating: $rating.val(),
-            text: $text.val(),
-            sex: $sex.val(),
-            age: $age.val(),
-            work: $work.val()
+            FirstName: $FirstName.val(),
+            LastName: $LastName.val(),
+            UserName: $UserName.val(),
+            Email: $Email.val(),
+            QuestionType: $QuestionType.val(),
+            Question: $Question.val()
         };
 
         if (allFilledOut) {
             $.ajax({
                 type: 'POST',
-                url: "../api/putResponse.php",
+                url: "../api/putSupport.php",
                 data: response,
                 dataType: 'JSON',
                 encode: true,
@@ -42,7 +43,7 @@ $(function() {
                         $.notify({
                             // options
                             title: 'Thank you ! <br>',
-                            message: 'Your response was recorded ',
+                            message: 'Your support request was submited ',
                         }, {
                             // settings
                             element: 'body',
@@ -62,12 +63,40 @@ $(function() {
                                 exit: 'animated bounceOutUp'
                             },
                             onClosed: function() {
-                                console.log("Response was registered !");
+                                console.log("Support was registered !");
                                 window.location.assign("index.php");
                             }
                         });
 
                     }
+                },
+                error: function(userData) {
+                    $.notify({
+                        // options
+                        title: '<strong>ERROR</strong> <br>',
+                        message: 'Please try again later ... ',
+                    }, {
+                        // settings
+                        element: 'body',
+                        type: "danger",
+                        allow_dismiss: true,
+                        placement: {
+                            from: "top",
+                            align: "center"
+                        },
+                        offset: 140,
+                        spacing: 20,
+                        z_index: 1031,
+                        delay: 1600,
+                        timer: 100,
+                        animate: {
+                            enter: 'animated bounceInDown',
+                            exit: 'animated bounceOutUp'
+                        },
+                        onClosed: function() {
+                            window.location.assign("index.php");
+                        }
+                    });
                 }
             });
         }
